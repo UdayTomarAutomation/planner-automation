@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="plannerHeaderSmoke" thread-count="3"
+	parallel="classes">
+
+	<test name="PlannerHeader1">
+		<classes>
+			<class
+				name="com.operative.tests.plannerHeader.PlannerHeaderCreation" />
+			<class
+				name="com.operative.tests.plannerHeader.CopyPlannerHeaderCreation" />
+			<class
+				name="com.operative.tests.plannerHeader.VerifyPlanNameInDealList" />
+		</classes>
+	</test>
+	<test name="PlannerHeader2">
+		<classes>
+			<class name="com.operative.tests.plannerHeader.VerifyMasterHeaderValues" />
+			<class
+				name="com.operative.tests.plannerHeader.SingleFilterDealList" />
+			<class
+				name="com.operative.tests.plannerHeader.RatingStreamValidationfromPopUpAddedByHeader" />
+		</classes>
+	</test>
+	<test name="PlannerHeader3">
+		<classes>
+			<class name="com.operative.tests.plannerHeader.VerifyMasterHeaderValues" />
+			<class
+				name="com.operative.tests.plannerHeader.RatingStreamDealHeaderValidations" />
+			<class
+				name="com.operative.tests.plannerHeader.AddAllValueFromRatingStreamPopUp" />
+		</classes>
+	</test>
+		<test name="PlannerHeader4">
+		<classes>
+			<class name="com.operative.tests.plannerHeader.AdvertiserPopUpValidations" />
+			<class
+				name="com.operative.tests.plannerHeader.AdvPopUpValidationsModifyDeal" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

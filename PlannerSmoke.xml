@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PlannerWorkspace" thread-count="3" parallel="classes">
+  
+  <test  name="PlannerHeader">
+    <classes>
+      <class name="com.operative.tests.plannerHeader.VerifyPlanNameInDealList"/>
+      <class name="com.operative.tests.plannerHeader.CopyPlannerHeaderCreation"/>
+      <class name="com.operative.tests.plannerHeader.PlannerHeaderCreation"/>
+   </classes>
+   </test> 
+   
+   <test  name="Plannerworkspace">
+    <classes>
+      <class name="com.operative.tests.plannerworkspace.EnterWeeklyspotsInAllweekWorkSpace"/>
+      <class name="com.operative.tests.plannerworkspace.VerifyProductDisplayingInWorkSpace"/>
+      <class name="com.operative.tests.plannerworkspace.VerifyCellpropertiesGrossCPM"/>
+   </classes>
+   </test> 
+   
+   <test  name="PlannerWs_cellProperties_Prorate">
+    <classes>
+      <class name="com.operative.tests.plannerworkspace.VerifyCellpropertiesImpsValue"/>
+      <class name="com.operative.tests.plannerworkspace.VerifyCellpropertiesRateValue"/>
+      <class name="com.operative.tests.plannerworkspace.VerfiyLineProrateRate"/>
+   </classes>
+   </test> 
+   
+   <test  name="Plannerws_totalQtr_createSimilarLine">
+    <classes>
+      <class name="com.operative.tests.plannerworkspace.VerifyImpsValueTotalQtr"/>
+      <class name="com.operative.tests.plannerworkspace.VerifyNetCpmTotalQtr"/>
+      <class name="com.operative.tests.plannerworkspace.VerifyProductCreateSimilarLine"/>
+   </classes>
+   </test> 
+   
+   <test  name="Plannerws_RefreshRateCard_RemoveUnit_totalUnit">
+    <classes>
+      <class name="com.operative.tests.plannerworkspace.VerifyRefreshRateCard_WS"/>
+      <class name="com.operative.tests.plannerworkspace.VerifyRemoveUnitsWorkSpace"/>
+      <class name="com.operative.tests.plannerworkspace.VerifyUnitsValueTotalQtr"/>
+   </classes>
+   </test>
+  
+  
+  
+  </suite> <!-- Suite -->

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WorkFlowSmoke" thread-count="2" parallel="false">
+	 <listeners>
+		<listener
+			class-name="com.operative.base.retryanalyzer.AnnotationTransformer" />
+	</listeners>
+	<test name="Workflow_UI_AOS_31350_C6715750">
+		<classes>
+			<class
+				name="com.operative.tests.workflow.AOS_31350_C6715750_verify_bpmnfile_upload_functionality_on_UI" />
+		</classes>
+	</test>
+	<test name="Workflow_UI_AOS_31350_C6715751">
+		<classes>
+			<class
+				name="com.operative.tests.workflow.AOS_31350_C6715751_VerifyExportButtonFunctionality" />
+		</classes>
+	</test>
+	<test name="Workflow_UI_AOS_31348">
+		<classes>
+			<class
+				name="com.operative.tests.workflow.AOS_31348_C6618752_Verify_workflow_status_grid" />
+		</classes>
+	</test>
+	<test name="Workflow_UI_AOS_32791">
+		<classes>
+			<class
+				name="com.operative.tests.workflow.AOS_32791_C6722507_VerfiyImportExportBPMNFilePermissions" />
+		</classes>
+
+	</test>
+		<test name="Workflow_UI_AOS_31349_C6733768">
+		<classes>
+			<class
+				name="com.operative.tests.workflow.AOS_31349_C6733768_VerifyAvailableStatusTableForStatus" />
+		</classes>
+	</test>
+		<test name="Workflow_UI_AOS_31349_C6733764_C6722545">
+		<classes>
+			<class
+				name="com.operative.tests.workflow.AOS_31349_C6733764_C6722545_VerifyApprovalRejectedStatusForStatus" />
+		</classes>
+	</test>
+		<test name="Workflow_UI_AOS_31349_MandatoryChecks">
+		<classes>
+			<class
+				name="com.operative.tests.workflow.AOS_31349_C6722551_VerifyMandatoryFieldsStatusDetailPage" />
+		</classes>
+	</test>
+		<test name="AOS_35530_C7002097_CreateTaskListDetails">
+		<classes>
+			<class
+				name="com.operative.tests.workflow.AOS_35530_C7002097_CreateTaskListDetails" />
+		</classes>
+	</test>
+		<test name="AOS_33106_C6886706_CreateNewApprovalRuleUI">
+		<classes>
+			<class
+				name="com.operative.tests.workflowUI.AOS_33106_C6886706_CreateNewApprovalRuleUI" />
+		</classes>
+	</test>
+	    <test name="AOS_56545_C9255121_VerifyDefaultTierValueForAutoReject">
+      <classes>
+         <class name="com.operative.tests.workflowUI.ApprovalRule.AOS_56545_C9255121_VerifyDefaultTierValueForAutoReject" />
+      </classes>
+   </test>
+<!--
+	<listeners>
+		<listener
+			class-name="com.operative.base.utils.ExtentReporterNG" />
+	</listeners>
+-->
+</suite> 
+
+
+
+  
+
+
+
+
+

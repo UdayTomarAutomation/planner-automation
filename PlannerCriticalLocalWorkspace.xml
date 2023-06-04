@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="plannerWorkspaceSmoke" thread-count="2" parallel="classes">
+ 
+  <test name="Plannerworkspace_WeeklyCalculation_LockUnlock">
+    <classes>
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.verifyCalculation_AllMetrices_WeeklyPannelWithbookAndRateCard_Local"/>
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.VerifyLockUnlockLine"/>
+      </classes>
+  </test>
+  <test name="Plannerworkspace_quickRefresh_CreateSimilarLine">
+    <classes>
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.VerifyCreateSimilarLine"/>
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.quickRefresh_UnitRateIndexChange_OverrideRateIndex_IncludingPlanTotal_Local"/>
+      
+      </classes>
+  </test>
+  <test name="PlannerworkspaceGrouping_Total">
+    <classes>
+     
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.verifyCalculation_AllMetrices_PlanTotalWithbookAndRateCardTwoLavelGrouping_Local"/>
+      </classes>
+  </test>
+  <test name="Plannerworkspace_PeriodViewCalculation_EditAttributeTool">
+    <classes>
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.verifyCalculation_AllMetrices_PeriodViewWithbookAndRateCard_Local"/>
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.VerifyEditAttributeTool"/>
+      </classes>
+  </test>
+  <test name="Plannerworkspace_quickRefresh_UnitRateIndexChange_remixPanel">
+    <classes>
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.quickRefresh_UnitRateIndexChange_KeepRateIndex_IncludingPlanTotal_Local"/>
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.remixPanel_local"/>
+      </classes>
+  </test>
+  <test name="Plannerworkspace_Calculation_AllMetrices_PlanTotal_RemoveLine">
+    <classes>
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.VerifyRemoveLine"/>
+      <class name="com.operative.tests.plannercriticalworkspaceLocal.verifyCalculation_AllMetrices_PlanTotalWithbookAndRateCard_Local"/>
+     
+    </classes>
+  </test>
+  
+   <test name="Plannerworkspace_GroupingPeriodView">
+    <classes>
+        <class name="com.operative.tests.plannercriticalworkspaceLocal.verifyCalculation_AllMetrices_PeriodViewWithbookAndRateCardTwoLavelGrouping_Local"/>
+    </classes>
+  </test>
+  
+   <test name="Plannerworkspace_quidViewUpdate_EditLine">
+    <classes>
+        <class name="com.operative.tests.plannercriticalworkspaceLocal.VerifyEditLine"/>
+          <class name="com.operative.tests.plannercriticalworkspaceLocal.quidViewUpdate_WithMatrixUpdating_AtCellLevel_Local"/>
+    </classes>
+  </test>
+  
+     <test name="Plannerworkspace_LineAndDealProrate">
+    <classes>
+        <class name="com.operative.tests.plannercriticalworkspaceLocal.VerifyLineAndDealProrate"/>
+    </classes>
+  </test>
+  
+    <test name="Plannerworkspace_HavingHiatusExclusionConstraint">
+    <classes>
+        <class name="com.operative.tests.plannercriticalworkspaceLocal.verifyUnitDistribution_ProductHavingHiatusExclusionConstraint"/>
+    </classes>
+  </test>
+  
+     <test name="RemoveUnitsWeeklyAndLineLevel">
+    <classes>
+        <class name="com.operative.tests.plannercriticalworkspaceLocal.VerifyRemoveUnitsWeeklyAndLineLevel"/>
+    </classes>
+  </test>
+  
+   <test name="CopyPasteUnitsWeeklyAndLineLevel">
+    <classes>
+        <class name="com.operative.tests.plannercriticalworkspaceLocal.VerifyCopyPasteUnitsWeeklyAndLineLevel"/>
+    </classes>
+  </test>
+ 
+  </suite> <!-- Suite -->

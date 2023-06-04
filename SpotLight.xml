@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="spotLight" thread-count="2" parallel="classes">
+ 
+  <test name="Spotlight Default columns">
+    <classes>
+      <class name="com.operative.tests.spotlight.PAOS_133469_Default_columns"/>
+     </classes>
+  </test>
+   <test name="Spotlight All columns">
+    <classes>
+      <class name="com.operative.tests.spotlight.PAOS_134397_VerifyAllColumnsPresentInGrid"/>
+     </classes>
+  </test>
+  
+    <test name="Spotlight Default filters">
+    <classes>
+      <class name="com.operative.tests.spotlight.PAOS_139147_DefaultFilters"/>
+     </classes>
+  </test>
+      <test name="Spotlight enable disable filters">
+    <classes>
+      <class name="com.operative.tests.spotlight.PAOS_140803_CheckUncheckFilters"/>
+     </classes>
+  </test>
+</suite>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="plannerWorkspaceSmoke" thread-count="2" parallel="classes">
+ 
+  <test name="PlannerworkspaceSmoke1">
+    <classes>
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.verifyCalculation_AllMetrices_WeeklyPannelWithbookAndRateCard_Local"/>
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.VerifyLockUnlockLine"/>
+      </classes>
+  </test>
+  <test name="PlannerworkspaceSmoke2">
+    <classes>
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.VerifyCreateSimilarLine"/>
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.quickRefresh_UnitRateIndexChange_OverrideRateIndex_IncludingPlanTotal_Local"/>
+      
+      </classes>
+  </test>
+  <test name="PlannerworkspaceSmoke3">
+    <classes>
+     
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.verifyCalculation_AllMetrices_PlanTotalWithbookAndRateCardTwoLavelGrouping_Local"/>
+      </classes>
+  </test>
+  <test name="PlannerworkspaceSmoke4">
+    <classes>
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.verifyCalculation_AllMetrices_PeriodViewWithbookAndRateCard_Local"/>
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.VerifyEditAttributeTool"/>
+      </classes>
+  </test>
+  <test name="PlannerworkspaceSmoke5">
+    <classes>
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.quickRefresh_UnitRateIndexChange_KeepRateIndex_IncludingPlanTotal_Local"/>
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.remixPanel_local"/>
+      </classes>
+  </test>
+  <test name="PlannerworkspaceSmoke6">
+    <classes>
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.VerifyRemoveLine"/>
+      <class name="com.operative.tests.plannerLocalWorkspaceSmoke.verifyCalculation_AllMetrices_PlanTotalWithbookAndRateCard_Local"/>
+     
+    </classes>
+  </test>
+  
+   <test name="PlannerworkspaceSmoke7">
+    <classes>
+        <class name="com.operative.tests.plannerLocalWorkspaceSmoke.verifyCalculation_AllMetrices_PeriodViewWithbookAndRateCardTwoLavelGrouping_Local"/>
+    </classes>
+  </test>
+  
+   <test name="PlannerworkspaceSmoke8">
+    <classes>
+        <class name="com.operative.tests.plannerLocalWorkspaceSmoke.VerifyEditLine"/>
+          <class name="com.operative.tests.plannerLocalWorkspaceSmoke.quidViewUpdate_WithMatrixUpdating_AtCellLevel_Local"/>
+    </classes>
+  </test>
+  
+     <test name="PlannerworkspaceSmoke9">
+    <classes>
+        <class name="com.operative.tests.plannerLocalWorkspaceSmoke.VerifyLineAndDealProrate"/>
+    </classes>
+  </test>
+  
+    <test name="PlannerworkspaceSmoke10">
+    <classes>
+        <class name="com.operative.tests.plannerLocalWorkspaceSmoke.verifyUnitDistribution_ProductHavingHiatusExclusionConstraint"/>
+    </classes>
+  </test>
+ 
+  </suite> <!-- Suite -->

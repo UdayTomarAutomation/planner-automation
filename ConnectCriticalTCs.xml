@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ConnectHybrid" thread-count="1" parallel="classes">
+  
+  <test name="Hybrid Connect">
+    <classes>
+      <class name="com.operative.tests.connect.ConnectSalesOrderCreationClass"/>
+      <class name="com.operative.tests.connect.ConnectExposedProduct"/>
+      <class name="com.operative.tests.connect.ConnectLineItemCreate"/>
+      <class name="com.operative.tests.connect.ConnectSalesOrderCreationwithADU_MG_DifferentCostMethod_NoAgency"/>
+      <class name="com.operative.tests.connect.VerifyConnectAdvertiserAgencyinAOS"/>
+      <class name="com.operative.tests.connect.ConnectLineItemwithMultipleTargetOptions"/>     
+   </classes>
+   </test> 
+   
+
+  
+  </suite> <!-- Suite -->

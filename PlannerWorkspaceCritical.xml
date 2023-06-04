@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="plannerWorkspaceSmoke" thread-count="2" parallel="classes">
+ 
+  <test name="PlannerworkspaceSmoke1">
+    <classes>
+      <class name="com.operative.tests.plannerWorkspaceSmoke.QuickRefresh_IncludingPlanTotal"/>
+      <class name="com.operative.tests.plannerWorkspaceSmoke.remixPanel"/>
+     </classes>
+  </test>
+   <test name="PlannerworkspaceSmoke2">
+    <classes>
+      <class name="com.operative.tests.plannerWorkspaceSmoke.CellPropertiesUpdate_GrossRate_000_GrossCPM_And_checkQtyCalculation_And_Update_planTotal"/>
+      <class name="com.operative.tests.plannerWorkspaceSmoke.VerfiyDealProrateRate"/>
+      </classes>
+  </test>   
+  
+   <test name="QuickRefreshAndRateCardRefresh">
+    <classes>
+    <class name="com.operative.tests.plannerWorkspaceSmoke.VerifyProductCreateSimilarLine"/>
+      <class name="com.operative.tests.plannerWorkspaceSmoke.RateCardRefresh_IncludingPlanTotal"/>
+      </classes>
+  </test>
+  <test name="PlannerworkspaceSmoke3">
+    <classes>
+      <class name="com.operative.tests.plannerWorkspaceSmoke.QtrUpdate_GrossRate_000_GrossCPM_And_checkQty_WeeklyCalculation_planTotal_And_Update"/>
+      </classes>
+  </test>
+     
+    <test name="PlannerworkspaceSmoke4">
+    <classes>
+      <class name="com.operative.tests.plannerWorkspaceSmoke.quidViewUpdate_WithMatrixUpdating_AtCellLevel"/>      
+    </classes>
+  </test> 
+
+   <test name="PlannerworkspaceSmoke5">
+    <classes>
+      <class name="com.operative.tests.plannerWorkspaceSmoke.UnitViewUpdate_GrossRate_000_GrossCPM_CheckQtyCalculation_Update_IncludingPlanTotal"/>
+      </classes>
+  </test> 
+    <test name="PlannerworkspaceGroupingCalculation">
+    <classes>
+       <class name="com.operative.tests.plannerWorkspaceSmoke.GroupingLatestTwoLevelRemoveUnitAndCheckPinnedRowCalculationForIndividualGrouping_IncludingPlanTotal"/>
+      </classes>
+  </test> 
+  
+     <test name="PlannerworkspaceSmoke6">
+    <classes>
+      <class name="com.operative.tests.plannerWorkspaceSmoke.VerifyProduct_EditLine_ThreeMatrix"/>
+      </classes>
+  </test>
+  <test  name="PlannerworkspaceSmoke7">
+    <classes>
+      <class name="com.operative.tests.plannerworkspace.VerfiyLineProrateRate"/>
+   </classes>
+   </test> 
+  </suite> <!-- Suite -->
